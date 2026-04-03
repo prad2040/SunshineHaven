@@ -1,0 +1,5 @@
+{
+  "name": "Sunshine Haven Cafe",
+  "description": "A classy, lightweight website for Sunshine Haven Cafe, featuring exclusive Tasmanian VDL ice cream and a warm, passionate atmosphere.",
+  "requestFramePermissions": ["geolocation"]
+}
