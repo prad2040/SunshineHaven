@@ -23,18 +23,13 @@ import { getCafeDetails } from './services/geminiService';
 import { CafeDetails, FALLBACK_CAFE_DETAILS } from './types';
 import { cn } from './lib/utils';
 
-import menu1 from './assets/menu/1.png';
-import menu2 from './assets/menu/2.png';
-import menu3 from './assets/menu/3.png';
-import menu4 from './assets/menu/4.png';
-
 export default function App() {
   const [details, setDetails] = useState<CafeDetails>(FALLBACK_CAFE_DETAILS);
   const [loading, setLoading] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
 
-  const menuImages = [menu1, menu2, menu3, menu4];
+  const menuImages = ['1.png', '2.png', '3.png', '4.png'];
 
   const handleNextMenu = (e?: React.MouseEvent) => {
     e?.stopPropagation();
@@ -168,7 +163,6 @@ export default function App() {
               src="https://images.unsplash.com/photo-1501339819358-ee5969a2f242?auto=format&fit=crop&q=80&w=2000" 
               alt="Cafe Ambience" 
               className="w-full h-full object-cover opacity-20"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-brand-cream/0 via-brand-cream/50 to-brand-cream" />
           </div>
@@ -218,7 +212,6 @@ export default function App() {
                   src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1000" 
                   alt="Owner's Passion" 
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-lime/10 rounded-3xl -z-10 hidden lg:block" />
@@ -308,7 +301,6 @@ export default function App() {
                   src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&q=80&w=400" 
                   alt="Ice Cream Scoop" 
                   className="w-48 h-48 object-cover rounded-full border-8 border-brand-espresso/10"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </motion.div>
@@ -340,7 +332,6 @@ export default function App() {
                     src={src} 
                     alt={`Menu Card ${index + 1}`} 
                     className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-brand-espresso/0 group-hover:bg-brand-espresso/5 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
                     <div className="bg-white/90 p-4 rounded-full text-brand-espresso shadow-lg">
@@ -391,7 +382,6 @@ export default function App() {
                   src={menuImages[selectedMenuIndex]}
                   alt={`Menu Card ${selectedMenuIndex + 1}`}
                   className="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-white/60 font-medium">
                   {selectedMenuIndex + 1} / {menuImages.length}
@@ -469,13 +459,11 @@ export default function App() {
                   src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" 
                   alt="Cafe Interior" 
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
-                  referrerPolicy="no-referrer"
                 />
                 <img 
                   src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=600" 
                   alt="Artisanal Coffee" 
                   className="w-full h-80 object-cover rounded-3xl shadow-lg"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="space-y-6 pt-12">
@@ -483,13 +471,11 @@ export default function App() {
                   src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=600" 
                   alt="Ice Cream Scoops" 
                   className="w-full h-80 object-cover rounded-3xl shadow-lg"
-                  referrerPolicy="no-referrer"
                 />
                 <img 
                   src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=600" 
                   alt="Milkshake" 
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>
