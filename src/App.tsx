@@ -29,7 +29,16 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
 
-  const menuImages = ['1.png', '2.png', '3.png', '4.png'];
+  const menuImages = [
+    `${import.meta.env.BASE_URL}1.png`,
+    `${import.meta.env.BASE_URL}2.png`,
+    `${import.meta.env.BASE_URL}3.png`,
+    `${import.meta.env.BASE_URL}4.png`
+  ];
+
+  useEffect(() => {
+    console.log("Menu Image Paths:", menuImages);
+  }, []);
 
   const handleNextMenu = (e?: React.MouseEvent) => {
     e?.stopPropagation();
