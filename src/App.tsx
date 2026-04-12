@@ -474,7 +474,7 @@ export default function App() {
                 />
                 <img 
                   src="/SH Owner.jpg" 
-                  alt="Milkshake" 
+                  alt="Sunshine Haven Dreamer" 
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
                 />
               </div>
