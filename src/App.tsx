@@ -23,13 +23,18 @@ import { getCafeDetails } from './services/geminiService';
 import { CafeDetails, FALLBACK_CAFE_DETAILS } from './types';
 import { cn } from './lib/utils';
 
+import menu1 from './assets/menu/1.png';
+import menu2 from './assets/menu/2.png';
+import menu3 from './assets/menu/3.png';
+import menu4 from './assets/menu/4.png';
+
 export default function App() {
   const [details, setDetails] = useState<CafeDetails>(FALLBACK_CAFE_DETAILS);
   const [loading, setLoading] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
 
-  const menuImages = ['/1.png', '/2.png', '/3.png', '/4.png'];
+  const menuImages = [menu1, menu2, menu3, menu4];
 
   const handleNextMenu = (e?: React.MouseEvent) => {
     e?.stopPropagation();
