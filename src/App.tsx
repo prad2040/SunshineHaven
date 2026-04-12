@@ -473,7 +473,7 @@ export default function App() {
                   className="w-full h-80 object-cover rounded-3xl shadow-lg"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=600" 
+                  src="/SH Owner.jpg" 
                   alt="Milkshake" 
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
                 />
