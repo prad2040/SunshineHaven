@@ -456,7 +456,7 @@ export default function App() {
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" 
+                  src="/Cafe SH.jpg" 
                   alt="Cafe Interior" 
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
                 />
