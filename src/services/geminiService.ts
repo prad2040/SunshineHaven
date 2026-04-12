@@ -3,6 +3,9 @@ import { GoogleGenAI, Type } from "@google/genai";
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
 
 export async function getCafeDetails() {
+  if (!process.env.GEMINI_API_KEY) {
+    return null;
+  }
   const prompt = `
     Analyze the following URLs for Sunshine Haven Cafe in Sydney:
     1. https://www.google.com/maps/search/Sunshine+Haven/@-33.7445553,151.0166714,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D
