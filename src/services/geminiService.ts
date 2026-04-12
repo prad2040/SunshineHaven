@@ -11,10 +11,8 @@ export async function getCafeDetails() {
 
     Extract and summarize:
     - The owner's passion and story (Note: The owner is NOT from Tasmania, do not mention that).
-    - Menu: Provide a structured menu with sections (e.g., All Day Breakfast, Dessert, Frappes, Hot Drinks, Tea, Soft Drink, Milkshake, Iced Drink, 100% Juice, Premium Drink) and items with prices.
     - Ambience and vibe (Focus on the bright, lime-green, mustard, and sunny branding).
     - Details about the exclusive Tasmanian VDL ice cream, sorbets, and gelatos (Van Diemens Land Creamery). These are the ONLY items from Tasmania.
-    - MANDATORY FLAVORS: You MUST include these flavors in the vdlIceCream section: Cookies & Cream Gelato, Chocolate Hazelnut, Green Apple Sorbet, Café Latte Ice Cream, Chocolate Gelato, Pepperberry & Leatherwood, Mango Coconut Sorbet, Orange & Lemon Myrtle, Salted Lime Sorbet.
     - Location: Shop 1/ 506 Old Northern Road, Dural, 2158.
     - Opening Hours: Mon: CLOSED, Tue-Fri: 7:15 AM - 5:15 PM, Sat-Sun: 7:15 AM - 2:00 PM.
     - Contact: Instagram @sunshinehaven.au and Facebook @sunshinehaven.au (Do not include local phone numbers).
@@ -33,35 +31,11 @@ export async function getCafeDetails() {
           properties: {
             name: { type: Type.STRING },
             ownerPassion: { type: Type.STRING },
-            menu: {
-              type: Type.ARRAY,
-              items: {
-                type: Type.OBJECT,
-                properties: {
-                  title: { type: Type.STRING },
-                  subtitle: { type: Type.STRING },
-                  items: {
-                    type: Type.ARRAY,
-                    items: {
-                      type: Type.OBJECT,
-                      properties: {
-                        name: { type: Type.STRING },
-                        price: { type: Type.STRING },
-                        description: { type: Type.STRING },
-                      },
-                      required: ["name", "price"],
-                    },
-                  },
-                },
-                required: ["title", "items"],
-              },
-            },
             ambience: { type: Type.STRING },
             vdlIceCream: {
               type: Type.OBJECT,
               properties: {
                 description: { type: Type.STRING },
-                flavors: { type: Type.ARRAY, items: { type: Type.STRING } },
                 exclusivity: { type: Type.STRING },
               },
               required: ["description", "exclusivity"],
@@ -77,7 +51,7 @@ export async function getCafeDetails() {
             },
             visualThemes: { type: Type.ARRAY, items: { type: Type.STRING } },
           },
-          required: ["name", "ownerPassion", "menu", "ambience", "vdlIceCream", "location"],
+          required: ["name", "ownerPassion", "ambience", "vdlIceCream", "location"],
         },
       },
     });
