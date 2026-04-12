@@ -196,7 +196,7 @@ export const FALLBACK_CAFE_DETAILS: CafeDetails = {
   vdlIceCream: {
     description: "Premium ice cream, sorbet, and gelato from Van Diemens Land Creamery in Tasmania. Made with the purest Tasmanian milk and cream.",
     flavors: [
-      "Cookies & Cream Gelato",
+      "Blackcurrant Sorbet",
       "Chocolate Hazelnut",
       "Green Apple Sorbet",
       "Café Latte Ice Cream",
