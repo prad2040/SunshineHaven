@@ -210,7 +210,7 @@ export const FALLBACK_CAFE_DETAILS: CafeDetails = {
   },
   location: {
     address: "Shop 1/ 506 Old Northern Road, Dural, 2158",
-    hours: "Tue - Fri: 7:15 AM - 5:15 PM | Sat - Sun: 7:15 AM - 2:00 PM | Mon: CLOSED",
+    hours: "Tue - Fri: 8:15 AM - 4:15 PM | Sat - Sun: 8:15 AM - 2:00 PM | Mon: CLOSED",
     contact: "Follow us on Instagram @sunshinehaven.au"
   },
   visualThemes: ["Warm sunlight", "Fresh lime accents", "Mustard branding", "Vibrant scoops"]

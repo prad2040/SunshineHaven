@@ -17,7 +17,7 @@ export async function getCafeDetails() {
     - Ambience and vibe (Focus on the bright, lime-green, mustard, and sunny branding).
     - Details about the exclusive Tasmanian VDL ice cream, sorbets, and gelatos (Van Diemens Land Creamery). These are the ONLY items from Tasmania.
     - Location: Shop 1/ 506 Old Northern Road, Dural, 2158.
-    - Opening Hours: Mon: CLOSED, Tue-Fri: 7:15 AM - 5:15 PM, Sat-Sun: 7:15 AM - 2:00 PM.
+    - Opening Hours: Mon: CLOSED, Tue-Fri: 8:15 AM - 4:15 PM, Sat-Sun: 8:15 AM - 2:00 PM.
     - Contact: Instagram @sunshinehaven.au and Facebook @sunshinehaven.au (Do not include local phone numbers).
     - Any specific visual themes or "photos" described in reviews or posts.
   `;

@@ -461,15 +461,15 @@ export default function App() {
                   className="w-full h-64 object-cover rounded-3xl shadow-lg"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=600" 
-                  alt="Artisanal Coffee" 
+                  src="/Falafel Bowl.jpeg" 
+                  alt="All Day Breakfast" 
                   className="w-full h-80 object-cover rounded-3xl shadow-lg"
                 />
               </div>
               <div className="space-y-6 pt-12">
                 <img 
-                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=600" 
-                  alt="Ice Cream Scoops" 
+                  src="/Sundae Bowl.jpg" 
+                  alt="Ice Cream Sundae" 
                   className="w-full h-80 object-cover rounded-3xl shadow-lg"
                 />
                 <img 
